@@ -4,43 +4,43 @@ WEBVTT
 Welcome back.
 
 00:02.230 --> 00:08.970
-I've just put our robo friends project on GitHub but let's say you're downloading this project.
+I've just put our robofriends project on GitHub but let's say you're downloading this project.
 
 00:09.110 --> 00:15.950
-Maybe you're sharing a project with other developers but this project let's say was written last year.
+Maybe you're sharing a project with other developers but this project, let's say, was written last year.
 
 00:15.950 --> 00:21.500
-How can we update this project if you remember when we look at the package.
+How can we update this project? If you remember when we look at the 
 
 00:21.500 --> 00:23.090
-Dot Jason File.
+package.json File.
 
 00:23.090 --> 00:30.020
-We have the react version as sixteen point two but the react version is now higher.
+We have the react version as 16.2 but the react version is now higher.
 
 00:30.020 --> 00:35.750
 So let's update this project as you would on any other project.
 
 00:35.750 --> 00:39.670
-I'm going to clone this repo and I'm going to use SS H.
+I'm going to clone this repo and I'm going to use SSH.
 
 00:39.710 --> 00:46.260
-You might have to use HDP s if you haven't had that setup but I'm going to use SSA just so I don't have
+You might have to use HTTPS if you haven't had that setup but I'm going to use SSH just so I don't have
 
 00:46.260 --> 00:48.500
 to enter my password every time.
 
 00:48.750 --> 00:56.820
-So I'm going to clone this repo say get clone robo friends awesome.
+So I'm going to clone this repo say get clone robofriends. Awesome.
 
 00:56.860 --> 01:03.600
-Now if I go into my robo friends folder and I open this and sublime.
+Now if I go into my robofriends folder and I open this in Sublime.
 
 01:03.670 --> 01:05.120
 There we go.
 
 01:05.170 --> 01:09.620
-We have our package dot Jason File which we can see over here.
+We have our package.json file which we can see over here.
 
 01:09.670 --> 01:13.650
 Now when I usually download a project I want to make sure it starts.
@@ -85,64 +85,64 @@ have changed and now breaks your app completely so sometimes you want to go one 
 and see what the changes are in these libraries.
 
 02:28.670 --> 02:31.400
-Now if I run NPM plot it here
+Now if I run NPM audit it here
 
 02:35.160 --> 02:42.550
 it'll actually give me some idea of what my issues are now.
 
 02:42.690 --> 02:54.520
-Before I do NPM audit fix and then do dash dash force to force all those changes I want to talk a little
+Before I do 'npm audit fix' and then do dash dash force (--force) to force all those changes, I want to talk a little
 
 02:54.520 --> 02:56.530
-bit about this package that Jason
+bit about this package.json.
 
 02:59.670 --> 03:07.800
-you see the react scripts which is the create react app script that runs is outdated.
+You see the react scripts which is the create react app script that runs is outdated.
 
 03:07.800 --> 03:14.800
-There's a way higher version of React scripts a bigger version of the CIA create react.
+There's a way higher version of React scripts; a bigger version of the CRA-- create-react-app.
 
 03:15.000 --> 03:17.190
 And same with react.
 
 03:17.190 --> 03:26.540
-So one thing I can do is say NPM update and if I run this and when I click on this file check this out
+So one thing I can do is say 'npm update' and if I run this and when I click on this file check this out
 
 03:27.930 --> 03:29.060
 did you see that.
 
 03:29.340 --> 03:38.820
-My version's got updated now and p.m. update what it does is it looks at this version and says What's
+My versions got updated now npm update, what it does, is it looks at this version and says "What's
 
 03:38.820 --> 03:44.790
-the highest version that I can upgrade to in my case because I use that card.
+the highest version that I can upgrade to" in my case because I use that caret.
 
 03:44.790 --> 03:51.970
 It said hey you can upgrade to whatever the highest version is in the minor release.
 
 03:52.050 --> 03:59.960
-So if there was a react version 17 well this wouldn't upgrade to 17 because we're using the carrot.
+So if there was a react version 17 well this wouldn't upgrade to 17 because we're using the caret.
 
 03:59.970 --> 04:10.150
-Remember we can use greater than if we want to but this way we make sure that we only update whatever
+Remember we can use greater than (>) if we want to but this way we make sure that we only update whatever
 
 04:10.150 --> 04:14.690
 is in the minor release which tends to not have any breaking changes.
 
 04:14.740 --> 04:19.610
-For example when we have react 17 that's most likely going to have some breaking changes.
+For example when we have React 17 that's most likely going to have some breaking changes.
 
 04:19.720 --> 04:19.960
 Okay.
 
 04:19.990 --> 04:29.120
-So we have the react version updated but we still have these vulnerabilities that we need to fix let's
+So we have the React version updated but we still have these vulnerabilities that we need to fix. Let's
 
 04:29.120 --> 04:36.680
-now run the audit fix and force assuming that we've looked through the changes and we assume that it's
+now run 'npm audit fix --force' assuming that we've looked through the changes and we assume that it's
 
 04:36.710 --> 04:38.990
-ok everything should still work.
+ok. Everything should still work.
 
 04:39.290 --> 04:45.080
 So I'm going to run this and again keep in mind that when using force you want to make sure that you
@@ -151,22 +151,22 @@ So I'm going to run this and again keep in mind that when using force you want t
 actually review the updates.
 
 04:47.540 --> 04:53.290
-Now while this is going another thing I could have done with react is actually gone to the react Web
+Now while this is going, another thing I could have done with react is actually gone to the react website
 
 04:53.310 --> 05:01.340
-site and checked the actual version and instead of having that cared just or doing NPM update I could
+and checked the actual version and instead of having that caret just or doing NPM update I could
 
 05:01.430 --> 05:09.800
 just change the version let's say version 17 comes out in react seventeen point zero point two.
 
 05:09.890 --> 05:16.160
-Well I can just change that and package that Jason and run npm install again
+Well I can just change that and package.json and run 'npm install' again
 
 05:19.150 --> 05:21.370
 let's clear this.
 
 05:21.370 --> 05:28.310
-We see here that our ReACT script is now updated to version three point two.
+We see here that our react script is now updated to version 3.2.
 
 05:28.330 --> 05:31.460
 That is the latest version of create react.
@@ -187,7 +187,7 @@ Looks like everything is looking fine but we have one issue right.
 We've updated everything that we have.
 
 05:48.540 --> 05:57.770
-There's no vulnerabilities but because we've updated all these things will our project still work while
+There's no vulnerabilities but because we've updated all these things, will our project still work? Well,
 
 05:57.770 --> 05:58.910
 there's one way to find out.
@@ -217,7 +217,7 @@ That's great so just like that I was able to update my project upgrade my projec
 react all the latest react on the react scripts which is what create react app uses.
 
 06:38.700 --> 06:43.860
-We have TAC yarns updated as well and everything is working fine.
+We have tachyons updated as well and everything is working fine.
 
 06:45.080 --> 06:50.810
 So I can now push this change to get hub so that we don't have those security warnings.
@@ -226,13 +226,13 @@ So I can now push this change to get hub so that we don't have those security wa
 Let's do that.
 
 06:51.890 --> 06:57.280
-I'm going to say get ad get commit.
+I'm going to say 'git add .', 'git commit'.
 
 06:57.510 --> 07:07.590
 I'll say fixing security issues updated libraries
 
 07:10.400 --> 07:20.770
-to get push origin master because while I'm the only one on this project so I can just push to Max sir.
+to get push origin master because while I'm the only one on this project so I can just push to master.
 
 07:20.930 --> 07:32.030
 Now if I go back to my github page and I refresh let's check out the security tab and look at that we
@@ -253,22 +253,22 @@ But the more libraries you have the more dependencies you have the more maintena
 make sure that every time you update a library that it doesn't break your app.
 
 08:04.380 --> 08:10.920
-Our robo friends app was fairly small but you can imagine this being a bigger and bigger issues as applications
+Our robofriends app was fairly small but you can imagine this being a bigger and bigger issues as applications
 
 08:10.980 --> 08:11.290
 grow.
 
 08:11.940 --> 08:17.550
-But I hope you learned one little trick that took me a long time to actually learn and my developer
+But I hope you learned one little trick that took me a long time to actually learn in my developer
 
 08:17.550 --> 08:18.300
 career.
 
 08:18.390 --> 08:26.400
-That is the easiest way to keep your projects up to date and secure is to just simply update the package.
+That is the easiest way to keep your projects up to date and secure is to just simply update the 
 
 08:26.530 --> 08:27.690
-On file.
+package.json file.
 
 08:27.930 --> 08:29.520
 I'll see in the next one by.
