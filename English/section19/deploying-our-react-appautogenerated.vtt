@@ -46,7 +46,7 @@ Let's how to write after the name make this a little bit bigger.
 I'm going to add my username here and this is the repository name in our case.
 
 01:12.210 --> 01:14.150
-What was it.
+What was it?
 
 01:14.210 --> 01:15.620
 It was robofriends.
@@ -58,7 +58,7 @@ So again use your GitHub username.
 And then in here add your GitHub project name next.
 
 01:25.490 --> 01:34.630
-If we go through the steps it says that I need to install GitHub pages this package and then added to
+If we go through the steps it says that I need to install GitHub pages (gh-pages) this package and then add it to
 
 01:34.630 --> 01:35.970
 my deploy script.
@@ -70,13 +70,13 @@ So let's just copy and paste this so if you're using NPM you can do that if you'
 this is the command.
 
 01:44.510 --> 01:47.390
-So let's install get hub pages
+So let's install GitHub pages (gh-pages)
 
 01:50.290 --> 01:56.260
 and while that's getting installed let's go back here and it shows here that we need to add these two
 
 01:56.260 --> 02:01.240
-lines a pre deploy and deploy in our scripts.
+lines: a predeploy and deploy in our scripts.
 
 02:01.240 --> 02:03.220
 So once again go to our scripts
@@ -85,7 +85,7 @@ So once again go to our scripts
 and then copy and paste this line.
 
 02:09.180 --> 02:13.860
-So we have the pre deploy and the deploy.
+So we have the predeploy and the deploy.
 
 02:13.860 --> 02:18.600
 So the pre deploy runs 'npm run build' which we know what that does.
@@ -94,10 +94,10 @@ So the pre deploy runs 'npm run build' which we know what that does.
 It builds our project.
 
 02:20.870 --> 02:25.490
-It creates a production version of our project and creates a built folder.
+It creates a production version of our project and creates a build folder.
 
 02:25.490 --> 02:33.140
-And then the deploy is going to use this GitHub pages so that we just installed and use our built folder.
+And then the deploy is going to use this GitHub pages so that we just installed and use our build folder.
 
 02:33.140 --> 02:35.560
 Let's go back.
@@ -124,7 +124,7 @@ which is this script.
 And remember the predeploy's going to be run before it.
 
 02:59.710 --> 03:04.900
-So if I run this it looks like I have an error in my json package.
+So if I run this it looks like I have an error in my JSON package.
 
 03:04.900 --> 03:06.130
 Let's see.
@@ -169,7 +169,7 @@ refresh.
 There you go.
 
 04:05.840 --> 04:16.950
-Our robo friends app is now live at this U.R.L. so I can just copy this your URL go to my project click
+Our robo friends app is now live at this URL so I can just copy this your URL go to my project click
 
 04:17.760 --> 04:26.200
 edit and then add our Web site right here so next time anybody comes and checks out our repository they
@@ -187,10 +187,10 @@ Nice and simple and just like that we have a production ready app because rememb
 for us optimizes everything and keeps everything really really tiny for production.
 
 04:46.710 --> 04:54.090
-Our JavaScript files while they're minimized they look very small and well nothing like we had before
+Our JavaScript files while they're minimized they look very small and well, nothing like we had before
 
 04:54.150 --> 05:03.870
-with containers and components all of that because we use create react app gets optimized for production
+with containers and components all of that because we used create react app gets optimized for production
 
 05:05.410 --> 05:09.910
-congratulations go show off to your friends I'll see in the next one maybe.
+congratulations, go show off to your friends, I'll see you in the next one, byebye.
